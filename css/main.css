@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #ecf9f7;
+}
+
+.reg-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ecf9f7;
+}
+/* Left Page */
+.left-page{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:  0 auto 150px;
+    max-width: 500px;
+    padding: 20px ;
+}
+.reg-logo{
+    width: 100%;
+    margin: 0;
+}
+.reg-logo img{
+    width: fit-content;
+    height: 120px;
+}
+.reg-body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 450px;
+}
+.reg-body h3{
+    width: 100%;
+    text-wrap: wrap;
+    font-size: 40px;
+    line-height: 100px;
+}
+.reg-body p{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+/* Right Page */
+.right-page {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.form-body{
+    max-width: 500px;
+    width: 100%;
+    background:#fff ;
+    padding:35px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0  #ccc;
+}
+.form-body .form-title{
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+}
+
+.form-body form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0 12px 0;
+}
+form .user-details .input-field{
+    margin-bottom: 20px;
+    width: calc(100% /2 - 10px );
+}
+form .user-details .activity-field, form .user-details .password-field{
+    width: 100%;
+}
+.user-details .input-field input,.user-details .input-field select{
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.user-details .input-field .details{
+    display: block;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    font-size: 14px;
+}
+.agreement{
+    font-size: 11px;
+    width: 100%;
+    text-wrap:wrap;
+    font-weight: 500;
+    text-align: center;
+}
+.user-details .input-field input:focus,
+.user-details .input-field select:focus,
+.user-details .input-field input:valid,
+.user-details .input-field select:valid{
+    border-color:#ccc ;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    width: 100%;
+    background: #2EC4B6;
+    border:none;
+    padding: 10px;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 15px ;
+}
+
+.form-title{
+    width: 100%;
+    display: none;
+}
+
+
+/* Mobile Version */
+@media only screen and (max-width: 768px) {
+    .left-page{
+        display: none;
+    }
+    .right-page{
+        width: 100%;
+    }
+    .form-body{
+        max-width: 100%;
+    }
+    form .user-details .input-field{
+        margin-bottom: 0px;
+        width: 100%
+    }
+    .form-body form .user-details{
+        max-height: 400px;
+        overflow-y: scroll;
+    }
+    .form-body form .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+    .form-title{
+        display: block;
+    }
+    .form-title{
+        margin: 20px 0 10px;
+    }
+    .reg-logo{
+        width: 100%;
+        margin: 0;
+    }
+    .reg-logo img{
+        width: fit-content;
+        height: 80px;
+    }
+  
+    .reg-body h3{
+        width: 100%;
+        font-size: 30px;
+        line-height:50px;
+    }
+    .reg-body p{
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+}
